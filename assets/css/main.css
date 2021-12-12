@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazir;
+}
+
+.material-icons {
+  vertical-align: middle !important;
+}
+
+.material-icons-outlined {
+  vertical-align: middle !important;
+}
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mti-filled.woff2") format("woff2");
+}
+/* fallback */
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mti-outlined.woff2") format("woff2");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.navigation {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 320px;
+  height: 100vh;
+  background-color: #232228;
+  color: #fff;
+  right: 0;
+  position: fixed;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: 15px 0 0 0;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  overflow: auto;
+}
+
+.navigation ul li {
+  padding: 0 1em 0 2em;
+}
+
+.navigation ul li a {
+  padding: 13px 5px 13px 0;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+}
+.navigation ul li a > span.icon {
+  padding: 10px;
+}
+.navigation ul li a:hover {
+  background: #1276ff;
+  -ms-box-shadow: 0 0 5px #247fff;
+  -o-box-shadow: 0 0 5px #247fff;
+  -webkit-box-shadow: 0 0 5px #247fff;
+  -moz-box-shadow: 0 0 5px #247fff;
+  box-shadow: 0 0 5px #247fff;
+}
+
+.navigation-header {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.disable-select {
+  user-select: none;
+}
+
+.navigation-header-search-form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: column;
+  padding: 0 28px;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.navigation-header-search-form input {
+  padding: 10px 40px 10px 0;
+  background-color: #383741;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-family: "Vazir";
+  width: 100%;
+  outline: none;
+}
+
+.isearch {
+  position: absolute;
+  right: 1.4em;
+  top: 8px;
+  opacity: 0.7;
+}
+
+.user-avatar {
+  padding: 0 8px 0 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.user-avatar span {
+  font-weight: bold;
+  font-size: 12px;
+}
+.user-avatar img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.user-avatar .info {
+  padding: 10px;
+}
+.user-avatar #toggleProfileMenuBtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #383741;
+  border-radius: 50%;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+  margin: 20px 30px 0 0;
+  display: block;
+  outline: none;
+}
+.user-avatar #toggleProfileMenuBtn:hover {
+  background-color: #5c5a6a;
+}
+
+.user-avatar--menu {
+  position: absolute;
+  left: 10px;
+  min-width: 170px;
+  z-index: 10;
+  background: #323138;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -ms-transition: all 0.112s ease-in-out;
+  -o-transition: all 0.112s ease-in-out;
+  -webkit-transition: all 0.112s ease-in-out;
+  -moz-transition: all 0.112s ease-in-out;
+  transition: all 0.112s ease-in-out;
+  transform: rotate(-5deg);
+}
+.user-avatar--menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(0);
+}
+.user-avatar--menu ul {
+  padding: 0;
+  margin: 0;
+}
+.user-avatar--menu ul li {
+  list-style: none;
+  display: block;
+  padding: 0 !important;
+  margin: 0;
+}
+.user-avatar--menu ul li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+.user-avatar--menu ul li:last-child a {
+  border-radius: 0 0 10px 10px;
+}
+.user-avatar--menu ul li a {
+  padding: 6px 5px 6px 0;
+  font-size: 0.9em;
+}
+.text-align{
+text-align: center;
+font-size: larger;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
